@@ -363,6 +363,12 @@ impl<'a> Assets<'a> {
         self.small_text = Some(small_text);
         self
     }
+
+    /// Sets the URL to be opened when user click on small image
+    pub fn small_url(mut self, small_url: &'a str) -> Self {
+        self.small_url = Some(small_url);
+        self
+    }
 }
 
 impl<'a> Default for Assets<'a> {
